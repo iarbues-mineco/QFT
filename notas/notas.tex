@@ -1,0 +1,61 @@
+% Compilar con pdfLaTeX. Archivo codificado en UTF-8.
+\documentclass[11pt,a4paper,oneside,openany]{book}
+
+% Idioma y tipografía.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-nodecimaldot,es-noquoting]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% Página y figuras.
+\usepackage[margin=2.8cm]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{booktabs}
+
+% Matemáticas.
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{slashed}
+
+% Entornos numerados por capítulo.
+\theoremstyle{plain}
+\newtheorem{teorema}{Teorema}[chapter]
+\newtheorem{proposicion}[teorema]{Proposición}
+\newtheorem{lema}[teorema]{Lema}
+\newtheorem{corolario}[teorema]{Corolario}
+\theoremstyle{definition}
+\newtheorem{definicion}[teorema]{Definición}
+\newtheorem{ejemplo}[teorema]{Ejemplo}
+\newtheorem{ejercicio}[teorema]{Ejercicio}
+\theoremstyle{remark}
+\newtheorem*{observacion}{Observación}
+
+% Notación básica; ampliar a medida que se necesite.
+\newcommand{\dd}{\mathop{}\!\mathrm{d}}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\ee}{\mathrm{e}}
+\newcommand{\Lag}{\mathcal{L}}
+\newcommand{\Ham}{\mathcal{H}}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\diag}{diag}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+\DeclarePairedDelimiter{\bra}{\langle}{\rvert}
+\DeclarePairedDelimiter{\ket}{\lvert}{\rangle}
+\DeclarePairedDelimiterX{\braket}[2]{\langle}{\rangle}{#1\delimsize\vert #2}
+
+% Enlaces y referencias; cargar al final del preámbulo.
+\usepackage[unicode,hidelinks]{hyperref}
+\usepackage[spanish,nameinlink,noabbrev]{cleveref}
+\hypersetup{pdftitle={Notas de teoría cuántica de campos}}
+
+\title{Notas de teoría cuántica de campos}
+\author{}
+\date{}
+
+\begin{document}
+
+\end{document}
